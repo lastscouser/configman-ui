@@ -15,12 +15,4 @@ onMounted(() => {
   <router-view />
 </template>
 
-<style scoped>
-.app-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  text-align: center; /* Optional: Center text inside the router-view content */
-}
-</style>
+<style scoped></style>

@@ -52,47 +52,49 @@ const register = async () => {
 </script>
 
 <template>
-  <div class="p-mx-auto lg:w-9 sm:w-full">
-    <div class="text-center mb-5">
-      <img
-        src="/src/assets/codeway.png"
-        alt="Image"
-        height="100"
-        class="mb-3"
-      />
-      <div class="text-900 text-3xl font-medium mb-3">Sign In</div>
-    </div>
+  <div class="grid justify-content-center">
+    <div class="lg:w-8 sm:w-full">
+      <div class="text-center mb-5">
+        <img
+          src="/src/assets/codeway.png"
+          alt="Image"
+          height="100"
+          class="mb-3"
+        />
+        <div class="text-900 text-3xl font-medium mb-3">Sign In</div>
+      </div>
 
-    <div>
-      <label for="email" class="text-900 font-medium mb-2">Email</label>
-      <InputText
-        id="email"
-        type="email"
-        v-model="email"
-        placeholder="Email address"
-        class="w-full mb-3"
-      />
+      <div>
+        <label for="email" class="text-900 font-medium mb-2">Email</label>
+        <InputText
+          id="email"
+          type="email"
+          v-model="email"
+          placeholder="Email address"
+          class="w-full mb-3"
+        />
 
-      <label for="password" class="text-900 font-medium mb-2">Password</label>
-      <InputText
-        id="password"
-        type="password"
-        v-model="password"
-        placeholder="Password"
-        class="w-full mb-3"
-      />
-      <Button
-        label="Sign In"
-        icon="pi pi-user"
-        class="w-full mb-3"
-        @click="signin"
-      ></Button>
-      <Button
-        label="Register"
-        icon="pi pi-user"
-        class="w-full"
-        @click="register"
-      ></Button>
+        <label for="password" class="text-900 font-medium mb-2">Password</label>
+        <InputText
+          id="password"
+          type="password"
+          v-model="password"
+          placeholder="Password"
+          class="w-full mb-3"
+        />
+        <Button
+          label="Sign In"
+          icon="pi pi-user"
+          class="w-full mb-3"
+          @click="signin"
+        ></Button>
+        <Button
+          label="Register"
+          icon="pi pi-user"
+          class="w-full"
+          @click="register"
+        ></Button>
+      </div>
     </div>
   </div>
 </template>
