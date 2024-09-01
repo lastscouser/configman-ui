@@ -7,6 +7,7 @@ const toast = ref<ToastServiceMethods | null>(null);
 const router = ref<any>(null);
 
 // Create an instance of ApiService
-const apiService = new ApiService("http://localhost:1892/api", toast, router);
+const apiUrl = import.meta.env.VITE_API_BASE_URL;
+const apiService = new ApiService(apiUrl, toast, router);
 
 export { apiService, toast, router };
