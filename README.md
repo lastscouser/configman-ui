@@ -1,39 +1,38 @@
 # configman-ui
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
-```sh
-npm install
+### 1. Set Environment Variables
+
+You need to set the following environment variable:
+
+```bash
+# VITE_API_BASE_URL=http://localhost:1892/api
+VITE_API_BASE_URL=https://config-man-1784562de260.herokuapp.com/api
 ```
 
-### Compile and Hot-Reload for Development
+### 2. Install dependencies
 
 ```sh
-npm run dev
+yarn install
 ```
 
-### Type-Check, Compile and Minify for Production
+### 3. Compile and Hot-Reload for Development
 
 ```sh
-npm run build
+yarn dev
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### 4. Type-Check, Compile and Minify for Production
 
 ```sh
-npm run lint
+yarn build
+```
+
+### 5. Lint with [ESLint](https://eslint.org/)
+
+```sh
+yarn lint
 ```
